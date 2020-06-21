@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Constant {
     public static final int descriptionMax =2000;
-    public static final int urlMax = 2000;
+    public static final int urlMax = 5000;
+    public static final int blogContentMax = 2147483647;
     private Constant() {}
 }

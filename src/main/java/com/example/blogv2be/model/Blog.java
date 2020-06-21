@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 import java.sql.Date;
 
 @Entity
@@ -24,8 +25,10 @@ public class Blog {
     private String tittle;
     @Length(max = Constant.descriptionMax)
     private String description;
+    @Lob
     @Length(max = Constant.urlMax)
     private String thumbnail;
+    @Lob
     private String content;
     private String createdDate;
     private String lastUpdatedDate;
